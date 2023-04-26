@@ -1,0 +1,119 @@
+/* Estilos para todas as telas */
+body {
+  background-color: #f7f7f7;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  color: #008080;
+  margin-top: 20px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+label, button[type="submit"] {
+  background-color: #008080;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 5px;
+  font-size: 16px;
+}
+
+input[type="text"], input[type="number"] {
+  border: 2px solid #008080;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  font-size: 16px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  background-color: #fff;
+  border: 2px solid #008080;
+  border-radius: 5px;
+  margin: 10px auto;
+  padding: 10px;
+  width: 80%;
+  max-width: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-text {
+  color: #008080;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.item-quantidade {
+  color: #555;
+  font-size: 16px;
+}
+
+/* Estilos para telas com largura menor que 768px */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  label, button[type="submit"] {
+    font-size: 14px;
+  }
+
+  input[type="text"], input[type="number"] {
+    font-size: 14px;
+  }
+
+  .item-text {
+    font-size: 16px;
+  }
+
+  .item-quantidade {
+    font-size: 14px;
+  }
+}
+
+/* Estilos para telas com largura menor que 480px */
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  label, button[type="submit"] {
+    font-size: 12px;
+  }
+
+  input[type="text"], input[type="number"] {
+    font-size: 12px;
+  }
+
+  .item-text {
+    font-size: 14px;
+  }
+
+  .item-quantidade {
+    font-size: 12px;
+  }
+
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .item-text {
+    margin-bottom: 10px;
+  }
+}
