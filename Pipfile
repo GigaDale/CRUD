@@ -11,6 +11,7 @@ pymysql = "*"
 flask-caching = "*"
 beautifulsoup4 = "*"
 requests = "*"
+pytest = "*"
 
 [dev-packages]
 

@@ -27,6 +27,17 @@ def remove_item():
     db.delete_item(name.title())
     return redirect(url_for('home'))
 
+@app.route("/edit_item", methods=['POST'])
+def edit_item():
+    name = request.form['edit_item']
+    quantity = request.form['edit_item_quantidade']
+    new_name = request.form['new_name_item']
+    if not new_name:
+        db.edit_item(name, quantity)
+    else:
+        db.edit_item_with_name(name, quantity, new_name)
+    return redirect(url_for('home'))
+
 
 if __name__ == "__main__":
     app.run(debug=True) # Tirar debug antes de dar deploy
